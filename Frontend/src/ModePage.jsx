@@ -5,40 +5,55 @@ export default function ModePage() {
     const params = new URLSearchParams(window.location.search);
     const tutkinto = params.get("tutkinto");
     const vuosi = params.get("vuosi");
+    const language = params.get("language");
+    const darkTheme = params.get("darkTheme");
+
+    const navigate = useNavigate();
 
     const [mode, setMode] = useState(null);
     const canProceed = mode !== null;
-
-    navigate(`/?tutkinto=${tutkinto}&year=${year}&language=${language}&theme=${theme}`);
 
     return (
         <div>
             <h2>Valittu tutkinto: {tutkinto}</h2>
             <h3>Valittu vuosi: {vuosi}</h3>
-            <br />
-            <button onClick={()=> setMode("background")}>
+
+            <button onClick={() => setMode("background")}>
                 Taustatiedot
             </button>
-            <button onClick={()=> setMode("competencies")}>
+
+            <button onClick={() => setMode("competencies")}>
                 Tunnistettu osaaminen
             </button>
+
             <br /><br />
-            <button onClick={() => goBack(tutkinto, vuosi)}>
+
+            <button
+                onClick={() =>
+                    navigate({
+                        pathname: "/",
+                        search: `?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}&darkTheme=${darkTheme}`
+                    })
+                }
+            >
                 Takaisin
             </button>
 
-            <button disabled={!canProceed} onClick={() => goNext(mode, tutkinto, vuosi)}>
+            <button
+                disabled={!canProceed}
+                onClick={() => {
+                    if (mode === "background") {
+                        navigate(`/results/background?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}&darkTheme=${darkTheme}`);
+                    }
+
+                    if (mode === "competencies") {
+                        navigate(`/results/competencies?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}&darkTheme=${darkTheme}`);
+                    }
+                }}
+            >
                 Seuraava
             </button>
 
         </div>
     );
-}
-
-function goBack(tutkinto, year) {
-    window.location.href = `/?tutkinto=${tutkinto}&year=${year}`;
-}
-
-function goNext(mode, tutkinto, year) {
-    window.location.href = `/results?mode=${mode}&tutkinto=${tutkinto}&year=${year}`;
 }
