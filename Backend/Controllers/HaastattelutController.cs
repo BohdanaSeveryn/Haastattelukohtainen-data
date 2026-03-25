@@ -28,13 +28,14 @@ public class HaastattelutController : ControllerBase
     }
 
     [HttpGet("background")]
-    public IActionResult GetBackground([FromQuery] string tutkinto)
+    public IActionResult GetBackground([FromQuery] string tutkinto, [FromQuery] int vuosi)
     {
         if (!TutkintoMap.TryGetValue(tutkinto.ToUpper(), out int[] tutkintoIds))
             return BadRequest("Tuntematon tutkinto. Käytä RACA, LITO tai MOLEMMAT.");
 
         var filtered = _data.Haastattelut
             .Where(h => tutkintoIds.Contains(h.tutkintoId))
+            .Where(h => h.pvm.Year == vuosi)
             .ToList();
 
         if (!filtered.Any())
@@ -46,6 +47,18 @@ public class HaastattelutController : ControllerBase
         var percentKorkeakoulu = filtered.Count(h => h.korkeakouluVuosi != null) * 100.0 / filtered.Count;
         var avgTyokokemus = filtered.Average(h => h.tyokokemusVuosia);
 
+        var years = filtered.Select(h => h.tyokokemusVuosia).OrderBy(x => x).ToList();
+        double median;
+
+        if (years.Count % 2 == 1)
+            median = years[years.Count / 2];
+        else
+            median = (years[years.Count / 2 - 1] + years[years.Count / 2]) / 2.0;
+
+        var percentUlkomaan = filtered.Count(h => h.ulkomaanOpinnot) * 100.0 / filtered.Count;
+
+        var percentMuuOsaaminen = filtered.Count(h => h.muuOsaaminen) * 100.0 / filtered.Count;
+
         return Ok(new
         {
             tutkinto,
@@ -53,7 +66,10 @@ public class HaastattelutController : ControllerBase
             percentAmmatillinen,
             percentLukio,
             percentKorkeakoulu,
-            avgTyokokemus
+            avgTyokokemus,
+            median,
+            percentUlkomaan,
+            percentMuuOsaaminen
         });
     }
 
