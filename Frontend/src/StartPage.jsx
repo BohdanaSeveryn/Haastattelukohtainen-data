@@ -27,6 +27,7 @@ export default function StartPage() {
             <button onClick={() => setLanguage("Englanti")}>Englanti</button>
 
             <h2>Valitse tutkinto</h2>
+            <br />
 
             <button onClick={() => setTutkinto("RACA")}>RACA</button>
             <button onClick={() => setTutkinto("LITO")}>LITO</button>

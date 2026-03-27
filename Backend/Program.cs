@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddSingleton<DataService>();
 builder.Services.AddControllers();
+builder.Services.AddHttpClient();
 
 builder.Services.AddCors(options =>
 {
