@@ -1,11 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { translations } from "./i18n/translations"; 
+import { useLanguage } from "./context/LanguageContext";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function ModePage() {
+    const { language } = useLanguage();
     const params = new URLSearchParams(window.location.search);
     const tutkinto = params.get("tutkinto");
     const vuosi = params.get("vuosi");
-    const language = params.get("language");
     const darkTheme = params.get("darkTheme");
 
     const navigate = useNavigate();
@@ -15,32 +18,37 @@ export default function ModePage() {
 
     return (
         <div>
-            <h2>Valittu tutkinto: {tutkinto}</h2>
-            <h3>Valittu vuosi: {vuosi}</h3>
-
-            <button onClick={() => setMode("background")}>
-                Taustatiedot
-            </button>
-
-            <button onClick={() => setMode("competencies")}>
-                Tunnistettu osaaminen
-            </button>
-
+            <h3>{translations[language].selectedDegree}: {tutkinto}</h3>
+            <br />
+            <h3>{translations[language].selectedYear}: {vuosi}</h3>
             <br /><br />
+            <button onClick={() => setMode("background")}>
+                {translations[language].background}
+            </button>
+
+            <button style={{ marginLeft: "10px" }} onClick={() => setMode("competencies")}>
+                {translations[language].recognizedSkills}
+            </button>
+
+            <br /><br /><br /><br />
 
             <button
-                onClick={() =>
-                    navigate({
-                        pathname: "/",
-                        search: `?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}&darkTheme=${darkTheme}`
-                    })
-                }
+            onClick={() => {
+                sessionStorage.setItem("cameBack", "true");
+                navigate({
+                pathname: "/",
+                search: `?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}&darkTheme=${darkTheme}`
+                });
+            }}
             >
-                Takaisin
+            {translations[language].back}
             </button>
 
             <button
                 disabled={!canProceed}
+                style={{
+                    marginLeft: "10px"
+                }}
                 onClick={() => {
                     if (mode === "background") {
                         navigate(`/results/background?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}&darkTheme=${darkTheme}`);
@@ -51,7 +59,7 @@ export default function ModePage() {
                     }
                 }}
             >
-                Seuraava
+                {translations[language].next}
             </button>
 
         </div>

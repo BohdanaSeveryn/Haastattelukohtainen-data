@@ -24,7 +24,7 @@
  {
    "id": 1,
    "pvm": "2025-12-23",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2005,
    "ammatillinenVuosi": 2012,
    "ammatillinenKesken": true,
@@ -46,7 +46,7 @@
  {
    "id": 2,
    "pvm": "2026-03-06",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1993,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -68,7 +68,7 @@
  {
    "id": 3,
    "pvm": "2026-01-16",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2015,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,

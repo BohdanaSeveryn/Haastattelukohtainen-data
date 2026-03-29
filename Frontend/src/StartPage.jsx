@@ -1,42 +1,53 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { translations } from "./i18n/translations"; 
+import { useLanguage } from "./context/LanguageContext";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function StartPage() {
+    const { language } = useLanguage();
     const navigate = useNavigate();
-
     const param = new URLSearchParams(window.location.search);
-    const initialTutkinto = param.get("tutkinto");
-    const initialVuosi = param.get("vuosi");
+    const cameBack = sessionStorage.getItem("cameBack") === "true";
 
-    const [darkTheme, setDarkTheme] = useState(false);
-    const [language, setLanguage] = useState("fi");
+    const initialVuosi = param.get("vuosi") || "2026";
+    const [vuosi, setVuosi] = useState(initialVuosi);
+
+    const initialTutkinto = cameBack ? param.get("tutkinto") : "";
     const [tutkinto, setTutkinto] = useState(initialTutkinto);
-    const [vuosi, setVuosi] = useState(initialVuosi || "");
 
-    const canProceed = tutkinto && vuosi;
+    if (cameBack) {
+    sessionStorage.removeItem("cameBack");
+    }
+
+    const canProceed = tutkinto !== "" && vuosi !== "";
+    const [darkTheme, setDarkTheme] = useState(false);
+
 
     return (
         <div>
-            <button onClick={() => setDarkTheme("Tumma")}>Tumma teema</button>
-            <button onClick={() => setDarkTheme("Vaalea")}>Vaalea teema</button>
 
-            <br /><br />
-
-            <button onClick={() => setLanguage("Suomi")}>Suomi</button>
-            <button onClick={() => setLanguage("Ruotsi")}>Ruotsi</button>
-            <button onClick={() => setLanguage("Englanti")}>Englanti</button>
-
-            <h2>Valitse tutkinto</h2>
             <br />
 
-            <button onClick={() => setTutkinto("RACA")}>RACA</button>
-            <button onClick={() => setTutkinto("LITO")}>LITO</button>
-            <button onClick={() => setTutkinto("Molemmat")}>Molemmat</button>
+            <h3>{translations[language].selectDegree}</h3>
+            <br />
 
-            <h3>Valitse vuosi</h3>
+            <button onClick={() => setTutkinto("RACA")}>
+                {translations[language].raca}
+            </button>
+            <br /><br />
+            <button onClick={() => setTutkinto("LITO")}>
+                {translations[language].lito}
+            </button>
+            <br /><br />
+            <button onClick={() => setTutkinto("Molemmat")}>
+                {translations[language].both}
+            </button>
+
+            <h3>{translations[language].selectYear}</h3>
 
             <select value={vuosi} onChange={(e) => setVuosi(e.target.value)}>
-                <option value="">-- Valitse vuosi --</option>
+                <option value="">-- {translations[language].selectYear} --</option>
                 <option>2026</option>
                 <option>2025</option>
                 <option>2024</option>
@@ -53,7 +64,7 @@ export default function StartPage() {
                     })
                 }
             >
-                Seuraava
+                {translations[language].next}
             </button>
         </div>
     );

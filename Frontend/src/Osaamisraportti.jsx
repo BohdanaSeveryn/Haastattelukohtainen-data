@@ -1,21 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import { translations } from "./i18n/translations"; 
+import { useLanguage } from "./context/LanguageContext";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function Osaamisraportti() {
+    const { language } = useLanguage();
     const navigate = useNavigate();
     const [params] = useSearchParams();
 
-    //const mode = params.get("mode");
     const tutkinto = params.get("tutkinto");
     const vuosi = params.get("vuosi");
-    const rawLang = params.get("language");
-
-    const language = 
-        rawLang === "Suomi" ? "fi" :
-        rawLang === "Ruotsi" ? "sv" :
-        rawLang === "Englanti" ? "en" :
-        "fi";
+    const rawLang = params.get("kieli");
 
     let theme = params.get("theme");
     if (!theme || theme === "null") theme = "darkTheme";
@@ -46,25 +43,18 @@ export default function Osaamisraportti() {
 
     return (
         <div>
-            <p>Language: {language}</p>
-            <p>Theme: {theme}</p>
+            <br />
+            <p>{translations[language].degree}: {data.tutkinto}</p>
+            <p>{translations[language].year}: {vuosi}</p>
+            <br />
+            <h3>{translations[language].recognizedSkills}</h3>
+            <p>{translations[language].average}: {data.keskimTunnistettu.toFixed(1)}</p>
+            <p>{translations[language].avgPartiallyRecognized}: {data.keskimJonkinVerran.toFixed(1)}</p>
+            <p>{translations[language].avgNotRecognized}: {data.keskimEiTunnistettu.toFixed(1)}</p>
 
-            <br /><br />
-            <h2>Taustatiedot</h2>
-            
-            <br />
-            <p>Tutkinto: {data.tutkinto}</p>
-            <p>Vuosi: {vuosi}</p>
-            <br />
-            <h3>Tunnistetut osaamiset</h3>
-            <p>Keskimäärin tunnistettu: {data.keskimTunnistettu.toFixed(1)}</p>
-            <p>Keskimäärin jonkin verran tunnistettu: {data.keskimJonkinVerran.toFixed(1)}</p>
-            <p>Keskimäärin ei-tunnistettu: {data.keskimEiTunnistettu.toFixed(1)}</p>
-
-            <h3>Yleisin osaaminen</h3>
-            <br />
+            <h3>{translations[language].mostCommonSkill}</h3>
             <p>
-            Osa ID: {data.yleisimmatOsatIds.join(", ")}
+            {translations[language].skillId}: {data.yleisimmatOsatIds.join(", ")}
             </p>
 
             <p>
@@ -80,20 +70,20 @@ export default function Osaamisraportti() {
             {language === "en" && (
                 <>Percentage: {data.yleisimmatOsatProsentit[0].toFixed(1)}% each</>
             )}
-            {language === "sv" && (
+            {language  === "sv" && (
                 <>Procent: {data.yleisimmatOsatProsentit[0].toFixed(1)}% var och en</>
             )}
             </p>
 
-            <h3>Tunnistamisen peruste</h3>
-            <p>Työkokemus: {data.prosenttiTyokokemus.toFixed(1)}%</p>
-            <p>Koulutus: {data.prosenttiKoulutus.toFixed(1)}%</p>
-            <p>Muu osaaminen: {data.prosenttiMuu.toFixed(1)}%</p>
+            <h3>{translations[language].basisForRecognition}</h3>
+            <p>{translations[language].workExperience}: {data.prosenttiTyokokemus.toFixed(1)}%</p>
+            <p>{translations[language].education}: {data.prosenttiKoulutus.toFixed(1)}%</p>
+            <p>{translations[language].otherSkills}: {data.prosenttiMuu.toFixed(1)}%</p>
 
 
             <br /><br />
             <button onClick={() => navigate(`/mode?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}&theme=${theme}`)}>
-                Takaisin
+                {translations[language].back}
             </button>
         </div>
     );
