@@ -1,15 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import { translations } from "./i18n/translations"; 
+import { useLanguage } from "./context/LanguageContext";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function Taustatiedot() {
+    const { language } = useLanguage();
     const navigate = useNavigate();
     const [params] = useSearchParams();
 
     const mode = params.get("mode");
     const tutkinto = params.get("tutkinto");
     const vuosi = params.get("vuosi");
-    const language = params.get("language");
     const theme = params.get("theme");
 
     const [data, setData] = useState(null);
@@ -17,7 +20,7 @@ export default function Taustatiedot() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5180/api/haastattelut/background?tutkinto=${tutkinto}&vuosi=${vuosi}`)
+        fetch(`http://localhost:5180/api/haastattelut/background?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}`)
             .then(res => {
                 if (!res.ok) throw new Error("Server error");
                 return res.json();
@@ -30,7 +33,7 @@ export default function Taustatiedot() {
                 setError(err.message);
                 setLoading(false);
             });
-    }, [tutkinto, vuosi]);
+    }, [tutkinto, vuosi, language]);
 
     if (loading) return <p>Ladataan...</p>;
     if (error) return <p>Virhe: {error}</p>;
@@ -38,27 +41,24 @@ export default function Taustatiedot() {
 
     return (
         <div>
-            <p>Language: {language}</p>
-            <p>Theme: {theme}</p>
+            <br />
+            <h3>{translations[language].background}</h3>
 
-            <br /><br />
-            <h2>Taustatiedot</h2>
-            
             <br />
-            <p>Tutkinto: {data.tutkinto}</p>
-            <p>Vuosi: {vuosi}</p>
+            <p>{translations[language].degree}: {data.tutkinto}</p>
+            <p>{translations[language].year}: {vuosi}</p>
             <br />
-            <h3>Koulutustausta</h3>
-            <p>Ammatillinen: {data.percentAmmatillinen.toFixed(1)}%</p>
-            <p>Lukio: {data.percentLukio.toFixed(1)}%</p>
-            <p>Korkeakoulu: {data.percentKorkeakoulu.toFixed(1)}%</p>
-            <h3>Työkokemus</h3>
-            <p>Keskimääräinen: {data.avgTyokokemus.toFixed(1)} vuotta</p>
-            <p>Mediaani: {data.median.toFixed(1)} vuotta</p>
+            <h3>{translations[language].educationBackground}</h3>
+            <p>{translations[language].vocational}: {data.percentAmmatillinen.toFixed(1)}%</p>
+            <p>{translations[language].highSchool}: {data.percentLukio.toFixed(1)}%</p>
+            <p>{translations[language].university}: {data.percentKorkeakoulu.toFixed(1)}%</p>
+            <h3>{translations[language].workExperience}</h3>
+            <p>{translations[language].average}: {data.avgTyokokemus.toFixed(1)} {translations[language].years}</p>
+            <p>{translations[language].median}: {data.median.toFixed(1)} {translations[language].years}</p>
 
             <br /><br />
             <button onClick={() => navigate(`/mode?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}&theme=${theme}`)}>
-                Takaisin
+                {translations[language].back}
             </button>
         </div>
     );

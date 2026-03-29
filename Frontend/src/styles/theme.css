@@ -1,0 +1,96 @@
+[data-theme="light"] {
+  --bg: #F3EDE4;
+  --bg-card: #7A8F5C;
+  --text: #2A2A2A;
+  --button-bg: #578f4b;
+  --button-hover: #D4C8B8;
+
+  --button-disabled-bg: #bcddb4;
+  --button-disabled-text: #585858;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  background-image: url('/textures/light-wood-grain.png');
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+
+
+[data-theme="dark"] {
+  --bg: #0A1A1A;
+  --bg-card: #0F2A2A;
+  --text: #E8DCC2;
+  --text-secondary: #C7B89A;
+  --button-bg: #123B3B;
+  --button-hover: #1A5C5C;
+  --shadow: rgba(0, 0, 0, 0.6);
+  --button-disabled-bg: #5f6b6b;
+  --button-disabled-text: #f3efe4; 
+}
+
+.card {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px var(--shadow);
+  backdrop-filter: blur(2px);
+}
+
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+button:disabled {
+  background: var(--button-disabled-bg);
+  color: var(--button-disabled-text);
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.8;
+}
+
+button:disabled:hover {
+  background: var(--button-disabled-bg);
+  transform: none;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.lang-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.lang-buttons button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--button-bg);
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.lang-buttons button:hover {
+  background: var(--button-hover);
+}
