@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { translations } from "./i18n/translations"; 
 import { useLanguage } from "./context/LanguageContext";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function Osaamisraportti() {
     const { language } = useLanguage();

@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { translations } from "./i18n/translations"; 
 import { useLanguage } from "./context/LanguageContext";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function StartPage() {
     const { language } = useLanguage();
@@ -22,7 +21,6 @@ export default function StartPage() {
 
     const canProceed = tutkinto !== "" && vuosi !== "";
     const [darkTheme, setDarkTheme] = useState(false);
-
 
     return (
         <div>

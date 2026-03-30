@@ -4,17 +4,14 @@ import ModePage from "./ModePage";
 import Taustatiedot from "./Taustatiedot";
 import Osaamisraportti from "./Osaamisraportti";
 import { ThemeProvider } from "./context/ThemeContext";
-import LanguageSelector from "./components/LanguageSelector";
 import { LanguageProvider } from "./context/LanguageContext";
 import "./styles/theme.css";
 import TopBar from "./components/TopBar";
-
 
 function App() {
   return (
     <LanguageProvider>
       <ThemeProvider>
-
         <BrowserRouter>
           <TopBar />
             <Routes>

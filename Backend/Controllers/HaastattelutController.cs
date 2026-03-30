@@ -17,7 +17,6 @@ public class HaastattelutController : ControllerBase
         _http = httpFactory.CreateClient();
     }
 
-    // 🔹 Локальні ID для фільтрації інтерв’ю
     private static readonly Dictionary<string, int[]> TutkintoMap = new()
     {
         { "RACA", new[] { 8516664 } },
@@ -31,14 +30,12 @@ public class HaastattelutController : ControllerBase
         { "LITO", 8505690 }
     };
 
-    // GET: /api/haastattelut/tutkinnot
     [HttpGet("tutkinnot")]
     public IActionResult GetTutkinnot()
     {
         return Ok(_data.Tutkinnot);
     }
 
-    // GET: /api/haastattelut/background
     [HttpGet("background")]
     public IActionResult GetBackground([FromQuery] string tutkinto, [FromQuery] int vuosi)
     {
@@ -81,7 +78,6 @@ public class HaastattelutController : ControllerBase
         });
     }
 
-    // GET: /api/haastattelut/competencies
     [HttpGet("competencies")]
     public async Task<IActionResult> GetCompetencies(
         [FromQuery] string tutkinto,
@@ -116,9 +112,6 @@ public class HaastattelutController : ControllerBase
         if (!filtered.Any())
             return NotFound("Ei dataa valitulle tutkinnolle.");
 
-        // -------------------------------------------------------
-        // 1) Побудувати tutkintoId → osaId[]
-        // -------------------------------------------------------
         var tutkintoToOsaMap = filtered
             .GroupBy(h => h.tutkintoId)
             .ToDictionary(
@@ -128,18 +121,12 @@ public class HaastattelutController : ControllerBase
                     .ToList()
             );
 
-        // -------------------------------------------------------
-        // 2) Побудувати tutkintoId → perusteId (int → int)
-        // -------------------------------------------------------
         var tutkintoIdToPerusteId = new Dictionary<int, int>
         {
             { 8505690, 8505690 }, // LITO
             { 8516664, 8516664 }  // RACA
         };
 
-        // -------------------------------------------------------
-        // 3) Побудувати perusteId → osaId[]
-        // -------------------------------------------------------
         var PerusteOsaMap = tutkintoToOsaMap
             .Where(kvp => tutkintoIdToPerusteId.ContainsKey(kvp.Key))
             .ToDictionary(
@@ -147,9 +134,6 @@ public class HaastattelutController : ControllerBase
                 kvp => kvp.Value
             );
 
-        // -------------------------------------------------------
-        // 4) Знайти найчастіші osaId
-        // -------------------------------------------------------
         var kaikkiTunnistetutOsat = filtered
             .Where(h => h.osatOsaamista != null)
             .SelectMany(h => h.osatOsaamista)
@@ -175,9 +159,6 @@ public class HaastattelutController : ControllerBase
 
             yleisimmatOsatIds.AddRange(mostCommon);
 
-            // -------------------------------------------------------
-            // 5) Розкласти osaId назад по perusteId
-            // -------------------------------------------------------
             var perusteToMostCommon = new Dictionary<int, List<int>>();
 
             foreach (var kvp in PerusteOsaMap)
@@ -193,9 +174,6 @@ public class HaastattelutController : ControllerBase
                     perusteToMostCommon[perusteId] = matched;
             }
 
-            // -------------------------------------------------------
-            // 6) Отримати назви з ePerusteet
-            // -------------------------------------------------------
             foreach (var kvp in perusteToMostCommon)
             {
                 int perusteId = kvp.Key;
@@ -262,6 +240,4 @@ public class HaastattelutController : ControllerBase
 
         return null;
     }
-
-
 }
