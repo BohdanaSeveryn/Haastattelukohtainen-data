@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { translations } from "./i18n/translations"; 
 import { useLanguage } from "./context/LanguageContext";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function ModePage() {
     const { language } = useLanguage();
@@ -61,7 +60,6 @@ export default function ModePage() {
             >
                 {translations[language].next}
             </button>
-
         </div>
     );
 }

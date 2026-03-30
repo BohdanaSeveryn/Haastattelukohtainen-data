@@ -1,6 +1,5 @@
 C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\bin\Debug\net9.0\appsettings.json
-C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\bin\Debug\net9.0\Data\haastattelut.json
 C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\bin\Debug\net9.0\Data\tutkinnot.json
 C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\bin\Debug\net9.0\Backend.staticwebassets.endpoints.json
 C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\bin\Debug\net9.0\Backend.exe
@@ -34,3 +33,4 @@ C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\obj\Debug\net9.0\
 C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\obj\Debug\net9.0\Backend.genruntimeconfig.cache
 C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\obj\Debug\net9.0\ref\Backend.dll
 C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\obj\Debug\net9.0\Backend.sourcelink.json
+C:\Users\basev\Bohdana\Sasky\Haastattelukohtainen-data\Backend\bin\Debug\net9.0\Data\haastattelut.json

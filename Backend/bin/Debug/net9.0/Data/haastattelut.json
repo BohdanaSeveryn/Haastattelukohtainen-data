@@ -2,7 +2,7 @@
  {
    "id": 0,
    "pvm": "2026-02-15",
-   "tutkintoId": 8516664,
+   "tutkintoId": 8505690,
    "peruskouluVuosi": 2008,
    "ammatillinenVuosi": 2018,
    "ammatillinenKesken": true,
@@ -24,7 +24,7 @@
  {
    "id": 1,
    "pvm": "2025-12-23",
-   "tutkintoId": 8516664,
+   "tutkintoId": 8505690,
    "peruskouluVuosi": 2005,
    "ammatillinenVuosi": 2012,
    "ammatillinenKesken": true,
@@ -46,7 +46,7 @@
  {
    "id": 2,
    "pvm": "2026-03-06",
-   "tutkintoId": 8516664,
+   "tutkintoId": 8505690,
    "peruskouluVuosi": 1993,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -68,7 +68,7 @@
  {
    "id": 3,
    "pvm": "2026-01-16",
-   "tutkintoId": 8516664,
+   "tutkintoId": 8505690,
    "peruskouluVuosi": 2015,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2202,7 +2202,7 @@
  {
    "id": 100,
    "pvm": "2026-01-29",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1996,
    "ammatillinenVuosi": 2017,
    "ammatillinenKesken": false,
@@ -2224,7 +2224,7 @@
  {
    "id": 101,
    "pvm": "2026-01-11",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2004,
    "ammatillinenVuosi": 2020,
    "ammatillinenKesken": false,
@@ -2246,7 +2246,7 @@
  {
    "id": 102,
    "pvm": "2026-03-01",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1992,
    "ammatillinenVuosi": 2022,
    "ammatillinenKesken": true,
@@ -2268,7 +2268,7 @@
  {
    "id": 103,
    "pvm": "2025-11-18",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2009,
    "ammatillinenVuosi": 2016,
    "ammatillinenKesken": false,
@@ -2290,7 +2290,7 @@
  {
    "id": 104,
    "pvm": "2025-12-09",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2016,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2312,7 +2312,7 @@
  {
    "id": 105,
    "pvm": "2026-02-12",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2018,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2334,7 +2334,7 @@
  {
    "id": 106,
    "pvm": "2026-01-11",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1991,
    "ammatillinenVuosi": 2022,
    "ammatillinenKesken": false,
@@ -2356,7 +2356,7 @@
  {
    "id": 107,
    "pvm": "2026-02-10",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2007,
    "ammatillinenVuosi": 1997,
    "ammatillinenKesken": true,
@@ -2378,7 +2378,7 @@
  {
    "id": 108,
    "pvm": "2026-02-09",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2019,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -2400,7 +2400,7 @@
  {
    "id": 109,
    "pvm": "2025-11-28",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": null,
    "ammatillinenVuosi": 1996,
    "ammatillinenKesken": false,
@@ -2422,7 +2422,7 @@
  {
    "id": 110,
    "pvm": "2026-03-14",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2012,
    "ammatillinenVuosi": 2018,
    "ammatillinenKesken": true,
@@ -2444,7 +2444,7 @@
  {
    "id": 111,
    "pvm": "2025-12-07",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1991,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2466,7 +2466,7 @@
  {
    "id": 112,
    "pvm": "2026-01-03",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2021,
    "ammatillinenVuosi": 2003,
    "ammatillinenKesken": true,
@@ -2488,7 +2488,7 @@
  {
    "id": 113,
    "pvm": "2026-03-07",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1995,
    "ammatillinenVuosi": 2025,
    "ammatillinenKesken": false,
@@ -2510,7 +2510,7 @@
  {
    "id": 114,
    "pvm": "2025-11-29",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1995,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2532,7 +2532,7 @@
  {
    "id": 115,
    "pvm": "2026-02-19",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1990,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -2554,7 +2554,7 @@
  {
    "id": 116,
    "pvm": "2025-11-09",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2006,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -2576,7 +2576,7 @@
  {
    "id": 117,
    "pvm": "2026-01-27",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2001,
    "ammatillinenVuosi": 2015,
    "ammatillinenKesken": true,
@@ -2598,7 +2598,7 @@
  {
    "id": 118,
    "pvm": "2025-12-13",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1999,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -2620,7 +2620,7 @@
  {
    "id": 119,
    "pvm": "2026-03-12",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2000,
    "ammatillinenVuosi": 2017,
    "ammatillinenKesken": true,
@@ -2642,7 +2642,7 @@
  {
    "id": 120,
    "pvm": "2026-03-02",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2012,
    "ammatillinenVuosi": 1995,
    "ammatillinenKesken": false,
@@ -2664,7 +2664,7 @@
  {
    "id": 121,
    "pvm": "2026-02-02",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2018,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2686,7 +2686,7 @@
  {
    "id": 122,
    "pvm": "2025-11-01",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2001,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2708,7 +2708,7 @@
  {
    "id": 123,
    "pvm": "2026-03-18",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": null,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -2730,7 +2730,7 @@
  {
    "id": 124,
    "pvm": "2025-11-22",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1996,
    "ammatillinenVuosi": 2023,
    "ammatillinenKesken": false,
@@ -2752,7 +2752,7 @@
  {
    "id": 125,
    "pvm": "2026-01-24",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1996,
    "ammatillinenVuosi": 2005,
    "ammatillinenKesken": true,
@@ -2774,7 +2774,7 @@
  {
    "id": 126,
    "pvm": "2026-02-08",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1994,
    "ammatillinenVuosi": 1999,
    "ammatillinenKesken": false,
@@ -2796,7 +2796,7 @@
  {
    "id": 127,
    "pvm": "2026-01-20",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2016,
    "ammatillinenVuosi": 2014,
    "ammatillinenKesken": true,
@@ -2818,7 +2818,7 @@
  {
    "id": 128,
    "pvm": "2026-01-11",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2004,
    "ammatillinenVuosi": 2004,
    "ammatillinenKesken": true,
@@ -2840,7 +2840,7 @@
  {
    "id": 129,
    "pvm": "2026-01-10",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2004,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2862,7 +2862,7 @@
  {
    "id": 130,
    "pvm": "2025-11-24",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2005,
    "ammatillinenVuosi": 2018,
    "ammatillinenKesken": false,
@@ -2884,7 +2884,7 @@
  {
    "id": 131,
    "pvm": "2025-11-18",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2018,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2906,7 +2906,7 @@
  {
    "id": 132,
    "pvm": "2025-12-13",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1994,
    "ammatillinenVuosi": 2003,
    "ammatillinenKesken": true,
@@ -2928,7 +2928,7 @@
  {
    "id": 133,
    "pvm": "2026-03-08",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2003,
    "ammatillinenVuosi": 1995,
    "ammatillinenKesken": true,
@@ -2950,7 +2950,7 @@
  {
    "id": 134,
    "pvm": "2025-11-27",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2000,
    "ammatillinenVuosi": 2008,
    "ammatillinenKesken": false,
@@ -2972,7 +2972,7 @@
  {
    "id": 135,
    "pvm": "2026-03-03",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1996,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -2994,7 +2994,7 @@
  {
    "id": 136,
    "pvm": "2025-11-13",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2013,
    "ammatillinenVuosi": 2015,
    "ammatillinenKesken": true,
@@ -3016,7 +3016,7 @@
  {
    "id": 137,
    "pvm": "2026-01-26",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2019,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -3038,7 +3038,7 @@
  {
    "id": 138,
    "pvm": "2026-01-22",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2005,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -3060,7 +3060,7 @@
  {
    "id": 139,
    "pvm": "2025-12-27",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2018,
    "ammatillinenVuosi": 2013,
    "ammatillinenKesken": true,
@@ -3082,7 +3082,7 @@
  {
    "id": 140,
    "pvm": "2026-01-19",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1994,
    "ammatillinenVuosi": 2009,
    "ammatillinenKesken": false,
@@ -3104,7 +3104,7 @@
  {
    "id": 141,
    "pvm": "2026-01-07",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1997,
    "ammatillinenVuosi": 2019,
    "ammatillinenKesken": false,
@@ -3126,7 +3126,7 @@
  {
    "id": 142,
    "pvm": "2025-12-30",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1998,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -3148,7 +3148,7 @@
  {
    "id": 143,
    "pvm": "2025-12-09",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1995,
    "ammatillinenVuosi": 2021,
    "ammatillinenKesken": true,
@@ -3170,7 +3170,7 @@
  {
    "id": 144,
    "pvm": "2026-01-21",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2024,
    "ammatillinenVuosi": 1998,
    "ammatillinenKesken": false,
@@ -3192,7 +3192,7 @@
  {
    "id": 145,
    "pvm": "2026-01-27",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2006,
    "ammatillinenVuosi": 2021,
    "ammatillinenKesken": true,
@@ -3214,7 +3214,7 @@
  {
    "id": 146,
    "pvm": "2025-12-27",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2022,
    "ammatillinenVuosi": 1997,
    "ammatillinenKesken": true,
@@ -3236,7 +3236,7 @@
  {
    "id": 147,
    "pvm": "2026-03-08",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2006,
    "ammatillinenVuosi": 1997,
    "ammatillinenKesken": true,
@@ -3258,7 +3258,7 @@
  {
    "id": 148,
    "pvm": "2026-01-26",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": null,
    "ammatillinenVuosi": 2025,
    "ammatillinenKesken": true,
@@ -3280,7 +3280,7 @@
  {
    "id": 149,
    "pvm": "2026-03-07",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2017,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -3302,7 +3302,7 @@
  {
    "id": 150,
    "pvm": "2026-01-20",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2021,
    "ammatillinenVuosi": 1998,
    "ammatillinenKesken": true,
@@ -3324,7 +3324,7 @@
  {
    "id": 151,
    "pvm": "2026-01-20",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1996,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -3346,7 +3346,7 @@
  {
    "id": 152,
    "pvm": "2026-03-12",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2022,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -3368,7 +3368,7 @@
  {
    "id": 153,
    "pvm": "2025-12-29",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2015,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -3390,7 +3390,7 @@
  {
    "id": 154,
    "pvm": "2025-12-26",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2005,
    "ammatillinenVuosi": 1995,
    "ammatillinenKesken": false,
@@ -3412,7 +3412,7 @@
  {
    "id": 155,
    "pvm": "2025-11-01",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2014,
    "ammatillinenVuosi": 2022,
    "ammatillinenKesken": true,
@@ -3434,7 +3434,7 @@
  {
    "id": 156,
    "pvm": "2026-02-01",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2014,
    "ammatillinenVuosi": 2005,
    "ammatillinenKesken": true,
@@ -3456,7 +3456,7 @@
  {
    "id": 157,
    "pvm": "2026-01-09",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2024,
    "ammatillinenVuosi": 2023,
    "ammatillinenKesken": false,
@@ -3478,7 +3478,7 @@
  {
    "id": 158,
    "pvm": "2026-02-28",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2022,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -3500,7 +3500,7 @@
  {
    "id": 159,
    "pvm": "2026-02-12",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2012,
    "ammatillinenVuosi": 1996,
    "ammatillinenKesken": false,
@@ -3522,7 +3522,7 @@
  {
    "id": 160,
    "pvm": "2026-01-26",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2006,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -3544,7 +3544,7 @@
  {
    "id": 161,
    "pvm": "2025-12-07",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2009,
    "ammatillinenVuosi": 2005,
    "ammatillinenKesken": false,
@@ -3566,7 +3566,7 @@
  {
    "id": 162,
    "pvm": "2026-01-23",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2007,
    "ammatillinenVuosi": 2000,
    "ammatillinenKesken": false,
@@ -3588,7 +3588,7 @@
  {
    "id": 163,
    "pvm": "2026-02-02",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1994,
    "ammatillinenVuosi": 2011,
    "ammatillinenKesken": true,
@@ -3610,7 +3610,7 @@
  {
    "id": 164,
    "pvm": "2026-01-12",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1998,
    "ammatillinenVuosi": 1995,
    "ammatillinenKesken": true,
@@ -3632,7 +3632,7 @@
  {
    "id": 165,
    "pvm": "2026-02-17",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2005,
    "ammatillinenVuosi": 2000,
    "ammatillinenKesken": true,
@@ -3654,7 +3654,7 @@
  {
    "id": 166,
    "pvm": "2025-11-19",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2011,
    "ammatillinenVuosi": 2002,
    "ammatillinenKesken": false,
@@ -3676,7 +3676,7 @@
  {
    "id": 167,
    "pvm": "2026-03-12",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2014,
    "ammatillinenVuosi": 1997,
    "ammatillinenKesken": false,
@@ -3698,7 +3698,7 @@
  {
    "id": 168,
    "pvm": "2025-12-16",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2021,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -3720,7 +3720,7 @@
  {
    "id": 169,
    "pvm": "2026-02-11",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2007,
    "ammatillinenVuosi": 2008,
    "ammatillinenKesken": false,
@@ -3742,7 +3742,7 @@
  {
    "id": 170,
    "pvm": "2025-12-05",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2001,
    "ammatillinenVuosi": 2022,
    "ammatillinenKesken": true,
@@ -3764,7 +3764,7 @@
  {
    "id": 171,
    "pvm": "2025-11-29",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1992,
    "ammatillinenVuosi": 2011,
    "ammatillinenKesken": true,
@@ -3786,7 +3786,7 @@
  {
    "id": 172,
    "pvm": "2026-03-27",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2017,
    "ammatillinenVuosi": 2001,
    "ammatillinenKesken": true,
@@ -3808,7 +3808,7 @@
  {
    "id": 173,
    "pvm": "2025-11-22",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2004,
    "ammatillinenVuosi": 2008,
    "ammatillinenKesken": false,
@@ -3830,7 +3830,7 @@
  {
    "id": 174,
    "pvm": "2025-11-06",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1994,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -3852,7 +3852,7 @@
  {
    "id": 175,
    "pvm": "2026-01-08",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2024,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -3874,7 +3874,7 @@
  {
    "id": 176,
    "pvm": "2026-03-02",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2018,
    "ammatillinenVuosi": 2002,
    "ammatillinenKesken": true,
@@ -3896,7 +3896,7 @@
  {
    "id": 177,
    "pvm": "2025-11-28",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1999,
    "ammatillinenVuosi": 1998,
    "ammatillinenKesken": false,
@@ -3918,7 +3918,7 @@
  {
    "id": 178,
    "pvm": "2026-03-26",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2021,
    "ammatillinenVuosi": 2002,
    "ammatillinenKesken": false,
@@ -3940,7 +3940,7 @@
  {
    "id": 179,
    "pvm": "2026-02-08",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2004,
    "ammatillinenVuosi": 2013,
    "ammatillinenKesken": false,
@@ -3962,7 +3962,7 @@
  {
    "id": 180,
    "pvm": "2026-02-12",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2009,
    "ammatillinenVuosi": 2018,
    "ammatillinenKesken": true,
@@ -3984,7 +3984,7 @@
  {
    "id": 181,
    "pvm": "2026-01-30",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": null,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -4006,7 +4006,7 @@
  {
    "id": 182,
    "pvm": "2026-03-01",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2001,
    "ammatillinenVuosi": 1998,
    "ammatillinenKesken": false,
@@ -4028,7 +4028,7 @@
  {
    "id": 183,
    "pvm": "2026-01-13",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1998,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -4050,7 +4050,7 @@
  {
    "id": 184,
    "pvm": "2025-12-13",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1999,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -4072,7 +4072,7 @@
  {
    "id": 185,
    "pvm": "2025-12-22",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1996,
    "ammatillinenVuosi": 1996,
    "ammatillinenKesken": true,
@@ -4094,7 +4094,7 @@
  {
    "id": 186,
    "pvm": "2025-11-30",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2007,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -4116,7 +4116,7 @@
  {
    "id": 187,
    "pvm": "2025-11-14",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2001,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -4138,7 +4138,7 @@
  {
    "id": 188,
    "pvm": "2025-11-11",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2007,
    "ammatillinenVuosi": 1999,
    "ammatillinenKesken": false,
@@ -4160,7 +4160,7 @@
  {
    "id": 189,
    "pvm": "2026-02-28",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2005,
    "ammatillinenVuosi": 2011,
    "ammatillinenKesken": true,
@@ -4182,7 +4182,7 @@
  {
    "id": 190,
    "pvm": "2025-11-02",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2000,
    "ammatillinenVuosi": 2005,
    "ammatillinenKesken": true,
@@ -4204,7 +4204,7 @@
  {
    "id": 191,
    "pvm": "2025-12-13",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2008,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -4226,7 +4226,7 @@
  {
    "id": 192,
    "pvm": "2026-03-10",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2016,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -4248,7 +4248,7 @@
  {
    "id": 193,
    "pvm": "2026-03-13",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1992,
    "ammatillinenVuosi": 1997,
    "ammatillinenKesken": false,
@@ -4270,7 +4270,7 @@
  {
    "id": 194,
    "pvm": "2025-11-15",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2014,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -4292,7 +4292,7 @@
  {
    "id": 195,
    "pvm": "2025-12-04",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2012,
    "ammatillinenVuosi": 2014,
    "ammatillinenKesken": false,
@@ -4314,7 +4314,7 @@
  {
    "id": 196,
    "pvm": "2025-12-15",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2009,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
@@ -4336,7 +4336,7 @@
  {
    "id": 197,
    "pvm": "2025-12-06",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2021,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -4358,7 +4358,7 @@
  {
    "id": 198,
    "pvm": "2026-01-05",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 2009,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": false,
@@ -4380,7 +4380,7 @@
  {
    "id": 199,
    "pvm": "2026-01-08",
-   "tutkintoId": 8505690,
+   "tutkintoId": 8516664,
    "peruskouluVuosi": 1994,
    "ammatillinenVuosi": null,
    "ammatillinenKesken": true,
