@@ -3,14 +3,12 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { translations } from "./i18n/translations"; 
 import { useLanguage } from "./context/LanguageContext";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function Taustatiedot() {
     const { language } = useLanguage();
     const navigate = useNavigate();
     const [params] = useSearchParams();
 
-    const mode = params.get("mode");
     const tutkinto = params.get("tutkinto");
     const vuosi = params.get("vuosi");
     const theme = params.get("theme");
@@ -22,7 +20,7 @@ export default function Taustatiedot() {
     useEffect(() => {
         fetch(`http://localhost:5180/api/haastattelut/background?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}`)
             .then(res => {
-                if (!res.ok) throw new Error("Server error");
+                if (!res.ok) throw new Error("No data available");
                 return res.json();
             })
             .then(json => {

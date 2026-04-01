@@ -11,7 +11,6 @@ export default function Osaamisraportti() {
 
     const tutkinto = params.get("tutkinto");
     const vuosi = params.get("vuosi");
-    const rawLang = params.get("kieli");
 
     let theme = params.get("theme");
     if (!theme || theme === "null") theme = "darkTheme";
@@ -23,7 +22,7 @@ export default function Osaamisraportti() {
     useEffect(() => {
     fetch(`http://localhost:5180/api/haastattelut/competencies?tutkinto=${tutkinto}&vuosi=${vuosi}&language=${language}`)
             .then(res => {
-                if (!res.ok) throw new Error("Server error");
+                if (!res.ok) throw new Error("No data available");
                 return res.json();
             })
             .then(json => {
